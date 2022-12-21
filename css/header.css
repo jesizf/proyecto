@@ -1,0 +1,280 @@
+header .header-principal {
+    background-color: var(--colorAmarillo);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+header div .burger-menu {
+
+    margin-right: 329px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+header div.burger-menu a i {
+    color: #fff;
+}
+
+.logo{
+
+    /* display: flex; */
+ 
+    width: 60%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-left: 90px; */
+}
+
+
+
+header .header-principal .logo:hover {
+
+    transform: scale(1.02);
+}
+
+
+header div.iconos nav ul a.user {
+    display: none;
+    transition: all 300ms ease;
+
+}
+
+header div.iconos nav ul a.user:hover {
+    cursor: pointer;
+    color: var(--colorAzul);
+    transform: scale(1.08);
+
+
+
+}
+
+
+header div.categorias {
+    display: none;
+    transition: all 0.3s ease;
+
+
+}
+
+header div.categorias {
+    display: flex;
+    background-color: var(--colorAmarilloOsc);
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+header div.categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+}
+header div.categorias ul li a{
+  color:white;
+}
+
+header div.categorias ul li a:hover{
+    color:black;
+    transition: all 1s;
+}
+
+.noche {
+    border: 1px solid;
+    background-color: var(--colorAmarilloOsc);
+    color: white;
+    border-radius: 20px;
+    border-color: var(--colorAmarillo);
+  padding:5px;
+    text-decoration: none;
+    
+}
+.noche:hover{
+    background-color: var(--colorAmarillo);
+    transition: all 1s;
+}
+/*Tablet*/
+
+@media (min-width: 768px) {
+    header .header-principal {
+        /*header*/
+        width: 100%;
+        display: none;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    header .burger-menu {
+        /*menu hamburguesa*/
+        display: none;
+        position: absolute;
+    }
+
+
+
+    .logo {
+        /*logo*/
+
+      
+ 
+        transition: all 0.3s ease;
+            /* display: flex; */
+    transition: all 300ms;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-left: 90px; */
+    display: flex;
+    align-items: center;
+   
+}
+    
+
+    header div.categorias ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 20px;
+
+        height: auto;
+
+
+        /* flex-direction: column; */
+    }
+
+
+    header div.categorias {
+        /* display: block; */
+        background-color: var(--colorAmarilloOsc);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    header div .buscador form input {
+        /*buscador solo*/
+        font-size: 16px;
+
+    }
+
+
+    header div .iconos nav {
+        width: 100%;
+
+
+    }
+
+    header div .iconos nav ul {
+        width: 140%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+
+    header div.iconos nav ul a.user {
+        display: block;
+        color: #fff;
+        font-size: 34px;
+        margin-top: 5px;
+    }
+
+
+
+
+    header div.categorias {
+        padding: 5px;
+        width: 100%;
+    }
+
+    header div.categorias ul li a {
+        /*barra de categorias*/
+        margin: 2px;
+        color: #ffff;
+
+    }
+
+    header div.categorias {
+        /*las categotias */
+        display: block;
+        background-color: var(--colorAzul);
+    }
+
+    header div.categorias ul {
+        /*ul categorias e iconos*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+}
+
+/*Desktop*/
+
+@media (min-width:1024px) {
+    header .header-principal {
+        width: 100%;
+        height: 90px;
+        display: none
+    }
+
+    header div.categorias {
+        padding: 5px;
+        width: 100%;
+    }
+
+    header div.categorias ul {
+        /* display: block; */
+        background-color: var(--colorAmarilloOsc);
+        /* display: flex; */
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        display: flex;
+
+
+
+
+
+    }
+
+    header div.categorias ul li {
+        padding: 10px;
+    }
+
+
+
+.logo {
+    transition: all 300ms;
+}
+
+.noche {
+    justify-content: end;
+}
+
+}

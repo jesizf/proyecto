@@ -1,0 +1,221 @@
+.home {
+  background-color: var(--colorGrisClaro);
+}
+
+.home #carrousel1,
+#carrousel2,
+#carrousel3 {
+  width: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home #carrousel1 {
+  background-image: url('/img/banner4.jpg');
+
+}
+
+.home #carrousel2 {
+  background-image: url('/img/banner2.jpg');
+}
+
+.home #carrousel3 {
+  background-image: url('/img/banner3.jpg');
+}
+
+.home main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.home main section {
+  width: 100%;
+
+
+}
+
+/*productos*/
+.home main section.productos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+/*seccion de tarjetas*/
+.home main section.productos article {
+  width: 70%;
+
+  text-align: center;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 rgb(0, 0, 1);
+  background-color: var(--colorGrisClaro);
+  cursor: pointer;
+
+}
+
+
+h3.titulos {
+  text-align: center;
+  padding: 5px;
+}
+
+/*tarjeta*/
+.home main section.acerca div {
+  justify-content: center;
+  margin: 20px 35px 20px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home main section.productos article .tarjeta {
+  text-align: center;
+  margin: 5px;
+  transition: all 0.3s ease;
+  background-color: var(--colorAmarilloOsc);
+  border-radius: 20px;
+
+}
+
+/*imagen tarjeta*/
+.home main section.productos img {
+  width: 70%;
+  margin-top: 20px;
+}
+
+/*nombre producto*/
+h4.productos {
+  font-size: 16px;
+}
+
+/*Precio producto*/
+.home main section.productos article div.detalle-producto span {
+  font-weight: bold;
+  color: var(--colorAzul);
+  font-size: 1.5rem;
+}
+
+/*detalle tarjeta*/
+.home main section.productos article div.detalle-producto {
+  width: 100%;
+  text-align: center;
+
+  color: var(--colorAzul);
+  text-align: center;
+  padding: 2px;
+}
+
+
+/*tablet*/
+@media (min-width: 768px) {
+
+  .home #carrousel1,
+  #carrousel2,
+  #carrousel3 {
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .home main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .home main section.acerca div {
+    justify-content: center;
+    margin: 20px 35px 20px 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home main section.productos {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+  /*seccion de tarjetas*/
+
+  .home main section.productos article {
+    width: 30%;
+    /* achica o agranda*/
+    text-align: center;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    display: inline;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: var(--colorAmarilloOsc)
+      /* flex-direction: row; */
+      /* flex-wrap: wrap; */
+  }
+
+  header div.categorias {
+    /* display: block; */
+    background-color: var(--colorAmarilloOsc);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+  }
+}
+
+  @media (min-width: 1024px) {
+    .home main section.acerca div {
+      justify-content: center;
+      margin: 20px 35px 20px 35px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home main section.productos {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      /* flex-direction: row; */
+      justify-content: space-around;
+    }
+
+    /*seccion de tarjetas*/
+    .productos article:hover {
+      transform: scale(1.02);
+    }
+
+    .home main section.productos article {
+      width: 19%;
+      /* achica o agranda*/
+      text-align: center;
+      border-radius: 20px;
+      font-size: 1rem;
+      /* border: 1px solid black; */
+      display: inline;
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      background-color: var(--colorAmarilloOsc);
+      transition: all 300ms;
+    }
+    .home main section.productos article:hover{
+      background-color: grey;
+      
+     
+    }
+    .home #carrousel1,
+    #carrousel2,
+    #carrousel3 {
+      width: 100%;
+      height: 600px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
