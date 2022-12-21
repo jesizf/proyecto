@@ -12,16 +12,16 @@
 }
 
 .home #carrousel1 {
-  background-image: url('../img/banner4.jpg');
+  background-image: url('.././img/banner4.jpg');
 
 }
 
 .home #carrousel2 {
-  background-image: url('/img/banner2.jpg');
+  background-image: url('.././img/banner2.jpg');
 }
 
 .home #carrousel3 {
-  background-image: url('/img/banner3.jpg');
+  background-image: url('.././img/banner3.jpg');
 }
 
 .home main {
